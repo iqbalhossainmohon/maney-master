@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maney Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-4">Money <span class="text-lime-400">Master</span>💰</h1>
+    </header>
+
+    <section class="bg-sky-100 flex items-center gap-2.5 w-10/12 mx-auto mt-3 rounded">
+        <div>
+            <div class="">
+                <img src="money.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="mt-4 text-center">
+                <h2 class="text-2xl font-semibold mb-4">Income</h2>
+                <label class="text-xl font-normal" for="">Income: </label>
+                <input id="income-field" class=" px-4 py-2 rounded " type="text" placeholder="$ Your monthly income">
+            </div>
+            <div class="mt-2 text-center">
+                <h2 class="text-2xl font-semibold mb-4">Expenses</h2>
+                <label class="text-xl font-normal" for="">Food: </label>
+                <input id="food-field" class="px-4 py-2 rounded ml-5" type="text" placeholder="$ Your monthly food const">
+            </div>
+            <div class="mt-2 text-center">
+                <label class="text-xl font-normal ml-5" for="">Rent: </label>
+                <input id="rent-field" class="px-4 py-2 rounded ml-2
+                " type="text" placeholder="$ Your monthly house rent">
+            </div>
+            <div class="mt-2 text-center">
+                <label class="text-xl font-normal" for="">Clothes: </label>
+                <input id="clothes-field" class="px-4 py-2 rounded" type="text" placeholder="$ Your monthly Clothes cost">
+                <br>
+
+                <button id="btn-calculate"
+                    class="bg-sky-400 hover:bg-sky-500 mt-3 text-center px-8 py-2 text-white font-semibold rounded">Calculate</button>
+            </div>
+            <div class="text-center mt-6">
+                <h1 class="text-3xl font-semibold mt-2">Total Expenses: <span id="total-expenses">00</span></h1>
+                <h1 class="text-3xl font-semibold">Balance: <span id="total-balance">00</span></h1>
+            </div>
+            <div class="text-center mt-6">
+                <label class="text-xl font-semibold" for="">Saveing: </label>
+                <input id="percentage-field" class="px-4 py-2 rounded w-24" type="text" placeholder="saving %">
+                <span>%</span>
+                <button id="btn-save"
+                    class="bg-sky-400 hover:bg-sky-500 px-8 py-2 font-semibold text-white rounded">Save</button>
+            </div>
+
+            <div class="text-center mt-4">
+                <h1 class="text-3xl font-semibold mt-2">Saving Amount: <span id="saving-amount">00</span></h1>
+                <h1 class="text-3xl font-semibold ">Remaining Balance: <span id="remaining-balance">00</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- js file  -->
+    <script src="js/saving.js"></script>
+</body>
+
+</html>
